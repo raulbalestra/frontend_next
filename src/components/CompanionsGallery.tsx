@@ -53,7 +53,7 @@ export default function CompanionsGallery({ language }: CompanionsGalleryProps) 
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch(`http://localhost:1337/api/companions?locale=${language}`);
+        const res = await fetch(`https://usable-crown-91e30743ba.strapiapp.com/api/companions?locale=${language}`);
 
         const json = await res.json();
         type ApiCompanion = {
