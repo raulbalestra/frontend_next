@@ -52,7 +52,7 @@ export default function Footer({ language }: FooterProps) {
   const [cookiePolicyLink, setCookiePolicyLink] = useState("");
   const [secureInfoButton, setSecureInfoButton] = useState("");
   useEffect(() => {
-     fetch(`http://localhost:1337/api/footer-content?populate=*&locale=${language}`)
+     fetch(`https://usable-crown-91e30743ba.strapiapp.com/api/footer-content?populate=*&locale=${language}`)
       .then((res) => res.json())
       .then((json) => {
         const data = json?.data;
