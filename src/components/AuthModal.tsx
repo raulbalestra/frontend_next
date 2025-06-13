@@ -103,7 +103,7 @@ export default function AuthModal({
     const fetchLoginContent = async () => {
       try {
         const res = await axios.get<{ data: LoginContent }>(
-          `http://localhost:1337/api/login-content?locale=${language}`
+          `https://usable-crown-91e30743ba.strapiapp.com/api/login-content?locale=${language}`
         );
 
         const data = res.data?.data;
@@ -120,7 +120,7 @@ export default function AuthModal({
     const fetchRegisterContent = async () => {
       try {
         const res = await axios.get<{ data: RegisterPageContent }>(
-          `http://localhost:1337/api/register-page-content?populate=*&locale=${language}`
+          `https://usable-crown-91e30743ba.strapiapp.com/api/register-page-content?populate=*&locale=${language}`
         );
 
         const data = res.data?.data;
@@ -141,7 +141,7 @@ export default function AuthModal({
     const fetchResetContent = async () => {
       try {
         const res = await axios.get<{ data: ResetPasswordContent }>(
-          `http://localhost:1337/api/reset-password-content?locale=${language}`
+          `https://usable-crown-91e30743ba.strapiapp.com/api/reset-password-content?locale=${language}`
         );
 
         const data = res.data?.data;
