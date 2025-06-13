@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://usable-crown-91e30743ba.strapiapp.com/";
 
 export async function fetchFromStrapi(endpoint: string) {
   try {
