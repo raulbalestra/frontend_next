@@ -33,7 +33,7 @@ export default function Header({ language, setLanguage }: HeaderProps) {
 
   useEffect(() => {
     async function loadHeaderData() {
-      const res = await fetchFromStrapi(`https://usable-crown-91e30743ba.strapiapp.com/api/header-content?populate=*&locale=${language}`);
+      const res = await fetchFromStrapi(`/api/header-content?populate=*&locale=${language}`);
 
       if (res) {
         setNavItems(res.navItems || []);
