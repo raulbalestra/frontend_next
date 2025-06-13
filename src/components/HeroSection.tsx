@@ -28,7 +28,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
 
     const fetchContent = async () => {
       try {
-        const res = await fetchFromStrapi(`/api/hero-section-content?locale=${language}`);
+        const res = await fetchFromStrapi(`https://usable-crown-91e30743ba.strapiapp.com/api/hero-section-content?locale=${language}`);
         if (res) setContent(res);
       } catch (error) {
         console.error("Erro ao buscar hero-section-content:", error);
