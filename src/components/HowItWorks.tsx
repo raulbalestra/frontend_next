@@ -36,7 +36,7 @@ export default function HowItWorksSection({ language }: WhyChooseUsSectionProps)
   const [button, setButton] = useState({ text: "", icon: "" });
 
   useEffect(() => {
-    fetch(`http://localhost:1337/api/why-choose-content?populate[cards]=true&populate[bottomButton]=true&locale=${language}`)
+    fetch(`https://usable-crown-91e30743ba.strapiapp.com/api/why-choose-content?populate[cards]=true&populate[bottomButton]=true&locale=${language}`)
 
       .then((res) => res.json())
       .then((json) => {
