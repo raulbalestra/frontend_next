@@ -91,7 +91,7 @@ export default function CompanionsGallery({ language }: CompanionsGalleryProps) 
     // ✅ Buscar título, subtítulo e botão de "View All"
     async function fetchGalleryContent() {
       try {
-        const res = await fetch(`http://localhost:1337/api/companions-gallery-content?locale=${language}`);
+        const res = await fetch(`https://usable-crown-91e30743ba.strapiapp.com/api/companions-gallery-content?locale=${language}`);
 
         const json = await res.json();
         const data = json.data;
