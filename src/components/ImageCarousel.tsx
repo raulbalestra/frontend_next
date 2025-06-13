@@ -84,7 +84,7 @@ export default function ImageCarouselSection({ language }: ImageCarouselSectionP
 
   useEffect(() => {
     fetch(
-    `http://localhost:1337/api/gallery-content?populate[galleryButton]=true&populate[heroGalleryInfo]=true&populate[slides]=true&populate[facilities]=true&populate[facilitiesIntro]=true&populate[privateEnvironmentButton]=true&locale=${language}`
+    `https://usable-crown-91e30743ba.strapiapp.com/api/gallery-content?populate[galleryButton]=true&populate[heroGalleryInfo]=true&populate[slides]=true&populate[facilities]=true&populate[facilitiesIntro]=true&populate[privateEnvironmentButton]=true&locale=${language}`
   )
       .then((res) => res.json())
       .then((json) => {
